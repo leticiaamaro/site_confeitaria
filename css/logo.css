@@ -1,0 +1,12 @@
+.image {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.image:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+
+}

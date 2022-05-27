@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forma de pagamento </title>
+</head>
+<link rel="stylesheet" href="css/checkout.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="Confeitaria.html">    
+<body>
+    <div class="wrapper"> 
+        <h2>Forma de pagamento</h2>
+        <form action="" method="post">
+        <!--Informações iniciais da conta-->
+        <h4>Conta</h4>
+        <div class="input_group"> </div>
+            <div class="input_box">
+                <input type="text" placeholder="Nome completo" required
+                class="name">
+               
+            </div>
+            
+            <div class="input_group"> </div>
+                <div class="input_box">
+                    <input type="text" placeholder="Nome do cartão" required
+                    class="name">
+                   
+                </div>
+                <div class="input_group"> </div>
+                    <div class="input_box">
+                        <input type="email" placeholder="E-mail" required
+                        class="name">
+                       
+                    </div>
+                    <div class="input_group"> </div>
+                        <div class="input_box">
+                            <input type="text" placeholder="Endereço" required
+                            class="name">
+                            
+                        </div>
+                        <div class="input_group"> </div>
+                            <div class="input_box">
+                                <input type="text" placeholder="Cidade" required
+                                class="name">
+                               
+                            </div>
+                        
+                       <!--Informações finais da conta-->
+
+
+                        <!--Começo dos dados de aniversário-->
+                       <div class="input_group"> </div>
+                        <div class="input_box">
+                            <h4>Data de aniversário</h4>
+                            <input type="text" placeholder="DIA" required
+                            class="dda">
+                            <input type="text" placeholder="MÊS" required
+                            class="dda">
+                            <input type="text" placeholder="ANO" required
+                            class="dda">
+                        </div>
+                        <!--Final dos dados de aniversário-->
+                    
+                        
+                        
+
+                        <!--Começo dos detalhes de pagamento-->
+                            <div class="input_group"> </div>
+                                <div class="input_box">
+                                    <h4>Detalhes do pagamento</h4>
+                                    <input type="radio" name="pay" class="radio"
+                                    id="b1" checked>
+                                    <label for="bc1"><span>
+                                        <i class="fa-brands fa-cc-visa"></i>Cartão de crédito
+                                    </span></label>
+
+                                    <input type="radio" name="pay" class="radio"
+                                    id="b2" checked>
+                                    <label for="bc2"><span>
+                                        <i class="fa-brands fa-cc-paypal"></i>Paypal
+                                    </span></label>
+                                </div>
+                            
+
+                            <div class="input_group"> </div>
+                                <div class="input_box">
+                                    <input type="tel" class="name" placeholder="Número do cartão 1111-2222-3333-4444" required>
+                                    <i class="fa fa-credit-card icon"></i> 
+                                </div> 
+                            
+                            
+                            <div class="input_group"> </div>
+                                <div class="input_box">
+                                    <input type="tel" class="name" placeholder="CVC do cartão 632" required>
+                                    <i class="fa fa-user icon"></i> 
+                                </div> 
+                            
+
+                            <div class="input_group"> </div>
+                                <div class="input_box">
+                                <div class="input_box"></div>
+                                    <input type="number" class="name" placeholder="Mês de expedição" required>
+                                    <i class="fa fa-calendar icon"></i> 
+                                </div> 
+                            
+
+                            <div class="input_group"> </div>
+                                <div class="input_box">
+                                    <input type="number" class="name" placeholder="Ano de expedição" required>
+                                    <i class="fa fa-calendar icon"></i> 
+                                </div> 
+                            
+                             
+                            
+                            <div class="input_group"> </div>
+                                <div class="input_box">
+                                    <input type="text" class="name" placeholder="Insira o nome do produto" required>
+                                    
+                                </div> 
+                            
+                                <div class="input_group"> </div>
+                                <div class="input_box">
+                                    <input type="number" class="name" placeholder="Insira o valor" required>
+
+                                </div> 
+                            
+
+                            <div class="input_group"> </div>
+                                <div class="input_box">
+                                    <button type="submit"> Faça sua encomenda </button>
+                               <!--Fim dos detalhes de pagamento-->
+
+      </form>
+    </div>
+</body>
+
+</html>

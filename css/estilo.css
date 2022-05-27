@@ -1,0 +1,305 @@
+/*CORPO*/
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #000
+}
+
+h1, h2, h3 {
+    font-family: 'Asap', sans-serif;
+    color: #000000;
+
+}
+
+.botao {
+    
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: rgba(255, 104, 205, 0.829);
+    font-size: .9em;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    outline: none;
+    box-shadow: 4px 4px 19px rgba(63, 30, 49, 0.685);
+    
+}
+ .botao:hover {
+        width: 100px;
+        background: linear-gradient(to right, var(--first-color) 0%, var(--second-color));
+        border: none;
+        outline: none;
+        box-shadow: 4px 4px 6px rgba(63, 30, 49, 0.685);
+        padding: 0.5rem 1.5rem;
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-bold);
+        letter-spacing: 4px;
+        text-align: center;
+        color: var(--white-color);
+        border-radius: 6px;
+        display: inline-block;
+        margin: 0 auto;
+        transition: all 0.4s ease-in-out;
+ }
+ 
+
+
+
+/*NAVEGAÇÃO*/
+
+ div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6ebda91c;
+}
+
+nav a {
+            text-decoration: none;
+            color: gray;
+            font-weight: 200;
+            font-size: 20px;
+            font-family: 'yellowtail', sans-serif
+            
+}
+
+nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+
+}
+
+nav ul li a {
+                display: inline-block;
+                padding: 10px 0;
+                text-decoration: none;
+                color: rgba(203, 99, 224, 0.733);
+}
+
+.active, nav ul li:hover {
+    background: rgb(238,130,238);
+    border-radius: 10px;
+    
+
+}
+
+
+
+
+/*CABEÇALHO*/
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../img/pink-mais-claro_background.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: black;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header h1 {
+                color: rgb(0, 0, 0);
+    }
+
+    header p {
+                margin-bottom: 2em;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px 20px 20px;
+        background-color: rgb(142, 91, 190);
+        color: white;
+    }
+
+    #sobre h2 {
+        color: white;
+    }
+
+    #sobre p{
+                margin-bottom: 2.5em;
+                max-width: 1000px;
+    }
+
+    #sobre .botao {
+        background-color: #F1F1F1;
+        color: #1c1c1c;
+    }
+
+    /*SERVIÇOS*/
+
+    #servicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px
+       
+    }
+
+    #servicos div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    
+    }
+
+    /*FOTOS*/
+
+    #fotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    #fotos img {
+        width: 100px;
+    }
+
+    /*CONTATO*/
+
+    #contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    #contato h2 {
+        color: #000000;
+    }
+
+    /*RODAPÉ*/
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #bb5ecef3;
+        color: #FFFFFF;
+
+    }
+
+    footer:hover {
+        background-color:#bb5ecef3 ;
+        color: #FFFFFF;
+        transition: all 0.5S ease-in;
+        transition-delay: 0.2s;
+        transform: scale(1.1);
+
+    }
+
+    footer:hover::after {
+        font-size: 20px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    @media screen and (min-width: 768px) {
+
+            /*nav*/
+
+            nav {
+
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            nav ul {
+
+                   flex-direction: row;
+                   width: 100%;
+                 
+
+            }
+                
+        }
+     
+    
+
+           /*CABEÇALHO*/
+
+           header {
+                    height: 600px;
+                    height: 60vh;
+                    justify-content: center;
+           }
+
+           /*SOBRE*/
+
+           #servicos {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-items: flex-start;
+                        max-width: 1000px;
+                        margin: 0 auto;
+                       }
+
+        #servicos h2 {
+                            text-align: center;
+                            width: 100%;
+        }
+
+        #servicos div {
+                        flex-grow: 1;
+                        flex-basis: 150px;
+                        padding: 0 10px;
+        }
+
+        /*FOTOS*/
+
+        #fotos {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        #fotos h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        #fotos img {
+            width: 33.3333333%;
+        }
+
+        /*CONTATO*/
+
+        #contato {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    max-width: 500px;
+                    margin: 0 auto;
+        }
+
+        #contato h2, #contato p{
+                    
+                    width: 100%;
+        
+        }
+
